@@ -1,6 +1,11 @@
 # 🏓 Papan Skor Tenis Meja Web App
 
-Web App ini merupakan papan skor interaktif untuk pertandingan tenis meja (ping pong) yang bisa dijalankan langsung di browser desktop. Aplikasi ini memungkinkan pemain untuk mencatat skor secara real-time, menyimpan riwayat pertandingan, menampilkan leaderboard berdasarkan kemenangan, dan memilih format pertandingan seperti *best of 3* atau *best of 5*.
+Aplikasi ini adalah papan skor interaktif untuk pertandingan tenis meja (**ping pong**) berbasis web yang dapat dijalankan langsung melalui browser desktop. Aplikasi ini memungkinkan pemain untuk:
+
+- mencatat skor secara real-time
+- menyimpan riwayat pertandingan
+- menampilkan leaderboard berdasarkan kemenangan
+- memilih format pertandingan (Best of 3 / Best of 5)
 
 ---
 
@@ -24,13 +29,26 @@ Web App ini merupakan papan skor interaktif untuk pertandingan tenis meja (ping 
 
 ## 📷 Tampilan Antarmuka
 
-> Tampilan aplikasi terdiri dari beberapa bagian:
+Tampilan aplikasi terdiri dari beberapa bagian:
 
-1. **Pengaturan Awal Pertandingan**: Input nama, servis awal, dan format pertandingan.
-2. **Papan Skor**: Penambahan poin, indikator servis, dan hasil pertandingan.
-3. **Riwayat Set**: Menampilkan skor per set.
-4. **Leaderboard**: Daftar pemain dengan jumlah kemenangan terbanyak.
-5. **Pertandingan Terbaru**: Daftar pertandingan yang baru diselesaikan.
+1. **Pengaturan Awal Pertandingan**: Input nama, pilihan servis awal, dan format pertandingan.
+2. **Papan Skor**: Penambahan poin, indikator giliran servis, dan informasi hasil pertandingan.
+3. **Riwayat Set**: Menampilkan skor akhir setiap set.
+4. **Leaderboard**: Menyimpan dan menampilkan daftar pemain dengan jumlah kemenangan terbanyak.
+5. **Pertandingan Terbaru**: Menyimpan daftar pertandingan yang baru saja selesai.
+
+### 🖼️ Screenshot
+
+Berikut beberapa tampilan dari aplikasi ini:
+
+#### 🎮 Tampilan Awal
+![image](https://github.com/user-attachments/assets/adb236e7-e7bc-453a-a9d4-f9b7e76a3605)
+
+#### 📊 Selama Pertandingan
+![image](https://github.com/user-attachments/assets/b0e64ec3-a0cd-42bf-ae11-6c88df3deae7)
+
+#### 🏆 Leaderboard dan Riwayat Pertandingan
+![image](https://github.com/user-attachments/assets/349e427c-fdc1-41aa-9005-ef913edd8906)
 
 ---
 
