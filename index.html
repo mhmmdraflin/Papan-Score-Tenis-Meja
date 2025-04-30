@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Papan Skor Tenis Meja</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f5f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d4ed8;
+      margin-bottom: 30px;
+    }
+
+    section {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    label, select, input {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 8px 14px;
+      margin: 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button#start-match {
+      background-color: #10b981;
+      color: white;
+    }
+
+    button#btn1, button#btn2 {
+      background-color: #3b82f6;
+      color: white;
+    }
+
+    button#restart-match-btn, button#new-match-btn {
+      background-color: #f59e0b;
+      color: white;
+    }
+
+    button#reset {
+      background-color: #ef4444;
+      color: white;
+    }
+
+    button#save-match-btn {
+      background-color: #16a34a;
+      color: white;
+    }
+
+    button#skip-save-btn {
+      background-color: #9ca3af;
+      color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th {
+      background-color: #1e40af;
+      color: white;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .serve-label {
+      font-weight: bold;
+      color: #ef4444;
+    }
+
+    .player {
+      margin-bottom: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML kamu tetap sama seperti sebelumnya -->
+  <!-- Mulai dari <h1> hingga </script> tidak perlu diubah -->
+  <h1>Papan Skor Tenis Meja</h1>
+
+  <section id="match-setup">
+    <label>Nama Pemain 1: <input type="text" id="name1" required /></label><br>
+    <label>Nama Pemain 2: <input type="text" id="name2" required /></label><br><br>
+
+    <label>Siapa Servis Duluan:</label>
+    <select id="initial-serve">
+      <option value="1">Pemain 1</option>
+      <option value="2">Pemain 2</option>
+    </select><br><br>
+
+    <label for="match-format">Format Pertandingan:</label>
+    <select id="match-format">
+      <option value="3">Best of 3</option>
+      <option value="5">Best of 5</option>
+    </select><br><br>
+
+    <button id="start-match">Mulai Pertandingan</button>
+  </section>
+
+  <section id="scoreboard" class="hidden">
+    <div class="player" id="player1">
+      <h2 id="player1-name">Pemain 1 <span id="serve1" class="serve-label"></span></h2>
+      <p>Skor: <span id="score1">0</span></p>
+      <button id="btn1">+1</button>
+    </div>
+
+    <div class="player" id="player2">
+      <h2 id="player2-name">Pemain 2 <span id="serve2" class="serve-label"></span></h2>
+      <p>Skor: <span id="score2">0</span></p>
+      <button id="btn2">+1</button>
+    </div>
+
+    <p id="serve-indicator">Servis: Pemain 1</p>
+    <p id="set-history">Riwayat Set:</p>
+    <p id="match-winner"></p>
+
+    <div id="save-options" class="hidden">
+      <p>Simpan hasil pertandingan ini?</p>
+      <button id="save-match-btn">Simpan</button>
+      <button id="skip-save-btn">Jangan Simpan</button>
+    </div>
+
+    <button id="restart-match-btn" class="hidden">Restart Match</button>
+    <button id="new-match-btn" class="hidden">New Match</button>
+    <button id="reset">Reset Semua</button>
+  </section>
+
+  <section id="leaderboard">
+    <h2>Papan Peringkat</h2>
+    <table border="1" id="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Peringkat</th>
+          <th>Nama Pemain</th>
+          <th>Jumlah Menang</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-body"></tbody>
+    </table>
+  </section>
+  
+  <section id="recent-matches">
+    <h2>Pertandingan Terbaru</h2>
+    <table border="1" id="recent-matches-table">
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Pemain 1</th>
+          <th>Pemain 2</th>
+          <th>Pemenang</th>
+          <th>Skor Akhir</th>
+        </tr>
+      </thead>
+      <tbody id="recent-matches-body"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

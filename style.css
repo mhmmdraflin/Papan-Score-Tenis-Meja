@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .player {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #serve-indicator {
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  #leaderboard, #recent-matches {
+    margin-top: 40px;
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+  }
+  .serve-label {
+    color: red;
+    font-size: 0.8em;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  
+  
