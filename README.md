@@ -48,7 +48,7 @@ Berikut beberapa tampilan dari aplikasi ini:
 ![image](https://github.com/user-attachments/assets/b0e64ec3-a0cd-42bf-ae11-6c88df3deae7)
 
 #### 🏆 Leaderboard dan Riwayat Pertandingan
-![image](https://github.com/user-attachments/assets/349e427c-fdc1-41aa-9005-ef913edd8906)
+![image](https://github.com/user-attachments/assets/024bd619-14cb-4d68-a625-d11cad94bf7d)
 
 ---
 
