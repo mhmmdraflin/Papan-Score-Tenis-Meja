@@ -69,6 +69,14 @@ Tampilan aplikasi terdiri dari beberapa bagian:
 
 ---
 
+## 🚀 Akses Cepat
+
+🖱️ Jalankan aplikasi Papan Skor Tenis Meja di browser dengan klik link berikut:
+➡️ [Papan-Score-Tenis-Meja](https://bit.ly/3SN8ScZ)
+(URL pendek yang mengarah ke: [https://mhmmdraflin.github.io/Papan-Score-Tenis-Meja/](https://mhmmdraflin.github.io/Papan-Score-Tenis-Meja/))
+
+---
+
 ## 📧 Kontak Pengembang
 
 - 👤 Nama: **Muhammad Rafli Nurfathan**  
